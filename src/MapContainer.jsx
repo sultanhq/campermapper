@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-export class Map extends Component{
+export class MapContainer extends Component{
   render(){
     return (
       <div className='map'>
-        
+
       </div>
     );
   };

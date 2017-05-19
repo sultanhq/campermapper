@@ -4,7 +4,6 @@ export class Site extends Component {
   render ()
   {
     const data = this.props.site
-    // console.log(data);
     if ("undefined" === typeof data) {
       return(
         <div className="site"></div>

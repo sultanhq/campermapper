@@ -1,17 +1,16 @@
-import React, { Component } from 'React';
+import React, { Component } from 'react';
 import { Site } from './site';
 
 export class SiteList extends Component {
   render()
   {
     const data = this.props.sites
-
     const sitesList = data.map((data, index) =>
-      <li key={index}>
+      <ul key={index}>
         <Site
-          sites={data}
+          site={data}
         />
-      </li>
+      </ul>
     );
 
     if ("undefined" === typeof data) {
@@ -21,9 +20,7 @@ export class SiteList extends Component {
     }
     return (
       <div className="siteListContainter">
-        <ul className="siteList">
           { sitesList }
-        </ul>
       </div>
     );
   }

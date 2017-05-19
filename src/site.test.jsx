@@ -20,7 +20,7 @@ describe('Site', () => {
 	});
 
 	it('should render a div with the site text', () => {
-		const site = [{id: 1, name: 'Hammerwood', price: 10}];
+		const site = {id: 1, name: 'Hammerwood', price: 10};
 		const component = renderIntoDocument(
 			<Site
 				 	site= {site}
@@ -34,7 +34,7 @@ describe('Site', () => {
 	});
 
 	it('should render a div with the site price', () => {
-		const site = [{id: 1, name: 'Hammerwood', price: 10}];
+		const site = {id: 1, name: 'Hammerwood', price: 10};
 		const component = renderIntoDocument(
 			<Site
 				 	site={site}

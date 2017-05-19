@@ -8,7 +8,9 @@ import { expect } from 'chai';
 
 
 describe('Site', () => {
-	it('should render a div with "site" class', () => {
+	it('should render an empty div with "site" class', () => {
+		const site = [];
+
 		const component = renderIntoDocument(
 			<Site />
 		);
@@ -18,18 +20,28 @@ describe('Site', () => {
 	});
 
 	it('should render a div with the site text', () => {
-		const site = 'Hammerwood';
+		const site = [{id: 1, name: 'Hammerwood', price: 10}];
 		const component = renderIntoDocument(
 			<Site
 				 	site= {site}
 				/>
 		);
 
-		const siteElement = findRenderedDOMComponentWithClass(component, 'site');
-
+		const siteElement = findRenderedDOMComponentWithClass(component, 'Name');
 		const siteText = siteElement.textContent
 
 		expect(siteText).to.equal('Hammerwood');
+	});
 
+	it('should render a div with the site price', () => {
+		const site = [{id: 1, name: 'Hammerwood', price: 10}];
+		const component = renderIntoDocument(
+			<Site
+				 	site={site}
+				/>
+		);
+		const siteElement = findRenderedDOMComponentWithClass(component, 'Price');
+		const sitePrice = siteElement.textContent
+		expect(sitePrice).to.equal('10');
 	});
 });

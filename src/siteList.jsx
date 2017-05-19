@@ -4,15 +4,25 @@ import { Site } from './site';
 export class SiteList extends Component {
   render()
   {
-    const { sites } = this.props;
+    const data = this.props.sites
+
+    const sitesList = data.map((data, index) =>
+      <li key={index}>
+        <Site
+          sites={data}
+        />
+      </li>
+    );
+
+    if ("undefined" === typeof data) {
+      return(
+        <div className="siteListContainter"></div>
+      );
+    }
     return (
-      <div className="siteList">
-        <ul>
-          { sites.map((site, index) => (
-            <li key={index}>
-              <Site site={site} />
-            </li>
-          ))}
+      <div className="siteListContainter">
+        <ul className="siteList">
+          { sitesList }
         </ul>
       </div>
     );

@@ -3,17 +3,23 @@
     {
       "id": 1,
       "name": "Hammerwood",
-      "price": 10
+      "price": 10,
+      "lat": 51.134,
+      "lng": 0.054
     },
     {
       "id": 2,
       "name": "Downe",
-      "price": 5
+      "price": 5,
+      "lat": 51.321,
+      "lng": 0.052
     },
     {
       "id": 3,
-      "name": "Frylands",
-      "price": 20
+      "name": "Blacklands",
+      "price": 20,
+      "lat": 51.084,
+      "lng": 0.028
     }
   ]
 }

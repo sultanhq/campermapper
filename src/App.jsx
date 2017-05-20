@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import SiteData from './siteData.json'
 import { SiteList } from '../src/siteList';
+import { MapContainer } from '../src/MapContainer';
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
         <SiteList
           sites={SiteData.sites}
           />
+        <MapContainer />
       </div>
     );
   }

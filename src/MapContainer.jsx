@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import {Gmaps, Marker, InfoWindow} from 'react-gmaps';
 
 const coords = {
-  lat: 54.7115618,
-  lng: -6.0656706
+  lat: 51.241988,
+  lng: -0.022966
 };
 
 const params = {v: '3.exp'};
@@ -42,7 +42,6 @@ export class MapContainer extends Component{
         lat={data.lat}
         lng={data.lng}
         label={"" + data.id}
-        onClick={this.message(data.name)}
         />
     );
     return (
@@ -52,7 +51,7 @@ export class MapContainer extends Component{
         height={'400px'}
         lat={coords.lat}
         lng={coords.lng}
-        zoom={5}
+        zoom={10}
         loadingMessage={'Be happy'}
         params={params}
         onMapCreated={this.onMapCreated}>

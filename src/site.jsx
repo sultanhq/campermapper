@@ -11,7 +11,7 @@ export class Site extends Component {
     }
     const siteDetails = (
       <li key={data.id}>
-        <div className="Name">{data.name}</div>
+        <div className="Name">{data.id + " : " +data.name}</div>
         <div className="Price">{data.price}</div>
       </li>
     );

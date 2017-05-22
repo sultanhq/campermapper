@@ -10,6 +10,9 @@ apikey:process.env.REACT_APP_FIREBASE_API_KEY,
 authDomain:process.env.REACT_APP_FIREBASE_AUTHDOMAIN,
 databaseURL:process.env.REACT_APP_FIREBASE_DATABASEURL,
 }
+if (process.env.NODE_ENV === 'production') { console.log(process.env.REACT_APP_FIREBASE_API_KEY)
+ }
+
 console.log(process.env)
 firebase.initializeApp(FIREBASE_OPTIONS);
 

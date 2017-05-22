@@ -5,14 +5,14 @@ import {
   Gmaps,
   Marker
 } from 'react-gmaps';
-import {
-  GMAPS_API_KEY
-} from './.env.js';
+// import {
+//   GMAPS_API_KEY
+// } from './.env.js';
 
 
 const params = {
   v: '3.exp',
-  key: GMAPS_API_KEY
+  key: process.env['GMAPS_API_KEY']
 };
 
 export class MapContainer extends Component {

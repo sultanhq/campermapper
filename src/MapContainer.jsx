@@ -57,8 +57,8 @@ export class MapContainer extends Component {
     return (
       <div className='map'>
         <Gmaps id='gmaps'
-        width={'600px'}
-        height={'400px'}
+        width={'75vw'}
+        height={'70vh'}
         lat={this.state.coords.lat}
         lng={this.state.coords.lng}
         zoom={this.state.zoom.value}

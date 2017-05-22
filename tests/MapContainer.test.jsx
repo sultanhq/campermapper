@@ -10,7 +10,9 @@ import { expect } from 'chai';
 describe ('MapContainer', () => {
   it('should render an empty div with "map" class', () => {
     const component = renderIntoDocument(
-      <MapContainer />
+      <MapContainer
+        sites={ [] }
+        />
     );
 
     const siteElement = findRenderedDOMComponentWithClass(component, 'map');
@@ -21,7 +23,7 @@ describe ('MapContainer', () => {
   it('should render an map in div with "map" class', () => {
     const component = renderIntoDocument(
       <MapContainer
-        defaultLocation="uk"
+        sites={ [] }
       />
     );
 

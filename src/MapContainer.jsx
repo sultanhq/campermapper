@@ -23,7 +23,7 @@ export class MapContainer extends Component {
         lat: 54.7115618,
         lng: -6.0656706
       },
-      zoom: {value: 5},
+      zoom: {value: 6},
     };
   }
 
@@ -57,8 +57,8 @@ export class MapContainer extends Component {
     return (
       <div className='map'>
         <Gmaps id='gmaps'
-        width={'75vw'}
-        height={'70vh'}
+        width={'70vw'}
+        height={'80vh'}
         lat={this.state.coords.lat}
         lng={this.state.coords.lng}
         zoom={this.state.zoom.value}

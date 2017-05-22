@@ -1,61 +1,71 @@
-import React, { Component } from 'react';
-import {Gmaps, Marker, InfoWindow} from 'react-gmaps';
+import React, {
+  Component
+} from 'react';
+import {
+  Gmaps,
+  Marker
+} from 'react-gmaps';
+import {
+  GMAPS_API_KEY
+} from './.env.js';
 
-const coords = {
-  lat: 51.241988,
-  lng: -0.022966
+
+const params = {
+  v: '3.exp',
+  key: GMAPS_API_KEY
 };
 
-const params = {v: '3.exp'};
-
-
-
-export class MapContainer extends Component{
-
+export class MapContainer extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      coords: {
+        lat: 54.7115618,
+        lng: -6.0656706
+      },
+      zoom: {value: 5},
+    };
+  }
 
   onMapCreated(map) {
     map.setOptions({
-      disableDefaultUI: false
+      disableDefaultUI: false,
+      streetViewControl: false
     });
   }
 
-  onCloseClick() {
-    console.log('onCloseClick');
+  centerMap() {
+    this.map.panTo({
+      lat: this.lat,
+      lng: this.lng
+    })
   }
 
-  onClick(data) {
-    console.log('onClick', data);
-    console.log(self);
-  }
-
-  message(i){
-    console.log('message', i);
-
-  }
-
-
-  render(){
+  render() {
 
     const data = this.props.sites
-    const markers = data.map((data) =>
-       <Marker key={data.id}
+
+    const createMarkers = data.map((data) =>
+      <Marker key={data.id}
         lat={data.lat}
         lng={data.lng}
         label={"" + data.id}
+        onClick={this.centerMap}
         />
     );
+
     return (
       <div className='map'>
         <Gmaps id='gmaps'
         width={'600px'}
         height={'400px'}
-        lat={coords.lat}
-        lng={coords.lng}
-        zoom={10}
-        loadingMessage={'Be happy'}
+        lat={this.state.coords.lat}
+        lng={this.state.coords.lng}
+        zoom={this.state.zoom.value}
+        loadingMessage={'Map Loading'}
         params={params}
         onMapCreated={this.onMapCreated}>
-        { markers }
+        { createMarkers }
         </Gmaps>
       </div>
     );

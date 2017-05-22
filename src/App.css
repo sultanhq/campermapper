@@ -5,14 +5,16 @@
 .App-logo {
   animation: App-logo-spin infinite 30s linear;
   height: 80px;
-  /*transform: rotate(90deg);*/
 }
 
 .App-header {
   background-color: #222;
   height: 150px;
+  width: 100%;
   padding: 20px;
   color: white;
+  top: 0;
+  position: fixed;
 }
 
 .App-intro {
@@ -20,6 +22,45 @@
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(360deg); }
-  to { transform: rotate(0deg); }
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.View {
+  display: flex;
+  flex-direction: row;
+  margin-top: 180px
+}
+
+.siteListContainer {
+  overflow: auto;
+}
+
+.mapContainer {
+  position: fixed;
+  right: 0;
+  margin-top: 10px
+}
+
+.site {
+  list-style-type: none;
+}
+
+.Name {
+  display: table;
+  margin-left: left;
+}
+
+.Price {
+  display: table;
+  margin-left: left;
+}
+
+.Button {
+  display: table;
+  margin-left: left;
 }

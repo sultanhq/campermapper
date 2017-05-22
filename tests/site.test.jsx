@@ -30,7 +30,7 @@ describe('Site', () => {
 		const siteElement = findRenderedDOMComponentWithClass(component, 'Name');
 		const siteText = siteElement.textContent
 
-		expect(siteText).to.equal('Hammerwood');
+		expect(siteText).to.equal('1 : Hammerwood');
 	});
 
 	it('should render a div with the site price', () => {
@@ -42,6 +42,6 @@ describe('Site', () => {
 		);
 		const siteElement = findRenderedDOMComponentWithClass(component, 'Price');
 		const sitePrice = siteElement.textContent
-		expect(sitePrice).to.equal('10');
+		expect(sitePrice).to.equal('£10 per night');
 	});
 });

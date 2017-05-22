@@ -5,7 +5,13 @@ import './index.css';
 // import { FIREBASE_OPTIONS } from './.env.js';
 import * as firebase from 'firebase';
 
-firebase.initializeApp(process.env['FIREBASE_OPTIONS']);
+const FIREBASE_OPTIONS = {
+apikey:process.env.REACT_APP_FIREBASE_API_KEY,
+authDomain:process.env.REACT_APP_FIREBASE_AUTHDOMAIN,
+databaseURL:process.env.REACT_APP_FIREBASE_DATABASEURL,
+}
+console.log(process.env)
+firebase.initializeApp(FIREBASE_OPTIONS);
 
 ReactDOM.render(
   <App />,

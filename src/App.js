@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Menu } from '../src/Menu';
 import { SiteList } from '../src/SiteList';
 import { MapContainer } from '../src/MapContainer';
 import * as firebase from 'firebase';
@@ -34,6 +35,9 @@ class App extends Component {
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to Camper Mapper</h2>
+          <div><Menu />
+
+        </div>
         </div>
         <div className="View">
           <div className='siteListContainer'>

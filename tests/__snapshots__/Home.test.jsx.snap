@@ -1,0 +1,7 @@
+exports[`Home a has a link to homepage 1`] = `
+<a
+  className="Home"
+  href="/">
+  Home
+</a>
+`;

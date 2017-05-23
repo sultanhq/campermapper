@@ -14,8 +14,16 @@ class App extends Component {
         "sites": [
 
         ]
-      }
+      },
+
+      selectedSite: null,
     };
+    this.moveMap = this.moveMap.bind(this)
+  }
+
+  moveMap = (e) => {
+    this.setState({selectedSite: e.id,
+    zoom: {value: 10}})
   }
 
   componentDidMount() {
@@ -38,12 +46,14 @@ class App extends Component {
         <div className="View">
           <div className='siteListContainer'>
             <SiteList
-            sites={this.state.siteData.sites}
+              moveMap={this.moveMap}
+              sites={this.state.siteData.sites}
             />
           </div>
           <div className='mapContainer'>
             <MapContainer
               sites={this.state.siteData.sites}
+              selectedSite={this.state.selectedSite}
               />
           </div>
         </div>

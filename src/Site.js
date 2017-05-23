@@ -2,12 +2,9 @@ import React, { Component } from 'react';
 
 export class Site extends Component {
 
-  moveMap() {
-    console.log("click")
-    this.map.setCenter({
-      lat: 51.141988,
-      lng: -0.022966
-    })
+  sendDetails = () => {
+    var e = {id: this.props.site.id}
+    this.props.moveMap(e)
   }
 
   render ()
@@ -23,7 +20,7 @@ export class Site extends Component {
       <li key={data.id}>
         <div className="Name">{data.id + " : " +data.name}</div>
         <div className="Price">£{data.price} per night</div>
-        <button className="Button" onClick={this.moveMap}>Show on map</button>
+        <button id={data.id} className="Button" onClick={this.sendDetails}>Show on map</button>
       </li>
     );
 

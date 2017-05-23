@@ -9,6 +9,7 @@ export class SiteList extends Component {
       <ul key={index}>
         <Site
           site={data}
+          moveMap={this.props.moveMap}
         />
       </ul>
     );

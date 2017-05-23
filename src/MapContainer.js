@@ -50,9 +50,7 @@ export class MapContainer extends Component {
       var id = nextProps.selectedSite
       var siteArrayPos = this.props.sites.map(function(e) {
         return e.id;
-      }).indexOf(id);
-      console.log(id, siteArrayPos)
-
+      }).indexOf(id)
       this.setState({
         coords: {
           lat: this.props.sites[this.props.selectedSite].lat,

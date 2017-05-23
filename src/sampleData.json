@@ -2,6 +2,12 @@
   "databases": {
     "siteData": {
       "sites": [{
+          "id": 0,
+          "name": "Malham tarn2",
+          "lat": 54.1011640,
+          "lng": -2.1640510,
+          "price": 0
+        }, {
           "id": 1,
           "name": "Malham tarn",
           "lat": 54.1011640,
@@ -35,6 +41,13 @@
           "lat": 53.3764950,
           "lng": -2.0534728,
           "price": 0
+        },
+        {
+          "id": 6,
+          "name": "Appledore North Devon2",
+          "lat": 51.0543560,
+          "lng": -4.1918404,
+          "price": 5
         },
         {
           "id": 7,
@@ -93,8 +106,15 @@
           "price": 6
         },
         {
+          "id": 15,
+          "name": "Manor Farm",
+          "lat": 52.3982170,
+          "lng": -1.1894170,
+          "price": 6
+        },
+        {
           "id": 16,
-          "name": "Ropery Road",
+          "name": "Ropery Road2",
           "lat": 51.2094430,
           "lng": -4.1154127,
           "price": 6

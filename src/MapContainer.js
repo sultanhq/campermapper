@@ -11,14 +11,22 @@ const params = {
 };
 
 export class MapContainer extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
+      siteData: {
+        "sites": [
+
+        ]
+      },
       coords: {
         lat: 54.7115618,
         lng: -6.0656706
       },
-      zoom: {value: 6},
+      zoom: {
+        value: 6
+      },
+      selectedSite: null,
     };
   }
 
@@ -30,10 +38,31 @@ export class MapContainer extends Component {
   }
 
   centerMap() {
-    this.map.panTo({
-      lat: this.lat,
-      lng: this.lng
-    })
+    this.map.setCenter({
+          lat: this.lat,
+          lng: this.lng
+        })
+  }
+
+  componentDidUpdate(nextProps) {
+    const newSite = this.props.selectedSite !== nextProps.selectedSite
+    if (newSite){
+      var id = nextProps.selectedSite
+      var siteArrayPos = this.props.sites.map(function(e) {
+        return e.id;
+      }).indexOf(id);
+      console.log(id, siteArrayPos)
+
+      this.setState({
+        coords: {
+          lat: this.props.sites[this.props.selectedSite].lat,
+          lng: this.props.sites[this.props.selectedSite].lng
+        },
+        zoom: {
+          value: 10
+        },
+      })
+    }
   }
 
   render() {

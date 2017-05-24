@@ -47,10 +47,6 @@ export class MapContainer extends Component {
   componentDidUpdate(nextProps) {
     const newSite = this.props.selectedSite !== nextProps.selectedSite
     if (newSite){
-      var id = nextProps.selectedSite
-      var siteArrayPos = this.props.sites.map(function(e) {
-        return e.id;
-      }).indexOf(id)
       this.setState({
         coords: {
           lat: this.props.sites[this.props.selectedSite].lat,
@@ -67,11 +63,11 @@ export class MapContainer extends Component {
 
     const data = this.props.sites
 
-    const createMarkers = data.map((data) =>
-      <Marker key={data.id}
+    const createMarkers = data.map((data, index) =>
+      <Marker key={index}
         lat={data.lat}
         lng={data.lng}
-        label={"" + data.id}
+        label={"" + index}
         onClick={this.centerMap}
         />
     );

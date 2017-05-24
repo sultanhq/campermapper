@@ -35,8 +35,8 @@ class App extends Component {
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to Camper Mapper</h2>
+          <Menu />
         </div>
-        <Menu />
         <div className="View">
           <div className='siteListContainer'>
             <SiteList

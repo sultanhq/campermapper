@@ -1,0 +1,6 @@
+exports[`Search a has a Search div 1`] = `
+<a
+  className="Search">
+  Search
+</a>
+`;

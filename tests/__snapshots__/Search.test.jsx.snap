@@ -1,6 +1,24 @@
 exports[`Search a has a Search div 1`] = `
-<a
-  className="Search">
-  Search
-</a>
+<div>
+  <form
+    className="searchForm"
+    onSubmit={
+      Array [
+        [Function],
+      ]
+    }>
+    <input
+      label="Search"
+      onChange={
+        Array [
+          [Function],
+        ]
+      }
+      type="text"
+      value="" />
+    <input
+      type="submit"
+      value="search!" />
+  </form>
+</div>
 `;

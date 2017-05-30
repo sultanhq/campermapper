@@ -20,8 +20,8 @@ export class MapContainer extends Component {
         ]
       },
       coords: {
-        lat: 54.7115618,
-        lng: -6.0656706
+        latitude: 54.7115618,
+        longitude: -6.0656706
       },
       zoom: {
         value: 6
@@ -39,8 +39,8 @@ export class MapContainer extends Component {
 
   centerMap() {
     this.map.setCenter({
-          lat: this.lat,
-          lng: this.lng
+          latitude: this.latitude,
+          longitude: this.longitude
         })
   }
 
@@ -49,8 +49,8 @@ export class MapContainer extends Component {
     if (newSite){
       this.setState({
         coords: {
-          lat: this.props.sites[this.props.selectedSite].lat,
-          lng: this.props.sites[this.props.selectedSite].lng
+          latitude: this.props.sites[this.props.selectedSite].latitude,
+          longitude: this.props.sites[this.props.selectedSite].longitude
         },
         zoom: {
           value: 10
@@ -65,8 +65,8 @@ export class MapContainer extends Component {
 
     const createMarkers = data.map((data, index) =>
       <Marker key={index}
-        lat={data.lat}
-        lng={data.lng}
+        lat={data.latitude}
+        lng={data.longitude}
         label={"" + index}
         onClick={this.centerMap}
         />
@@ -77,8 +77,8 @@ export class MapContainer extends Component {
         <Gmaps id='gmaps'
         width={'70vw'}
         height={'80vh'}
-        lat={this.state.coords.lat}
-        lng={this.state.coords.lng}
+        lat={this.state.coords.latitude}
+        lng={this.state.coords.longitude}
         zoom={this.state.zoom.value}
         loadingMessage={'Map Loading'}
         params={params}

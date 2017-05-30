@@ -6,12 +6,10 @@ export class SiteList extends Component {
   {
     const data = this.props.sites
     const sitesList = data.map((data, index) =>
-      <ul key={index}>
-        <Site
+        <Site key={index}
           site={data}
           moveMap={this.props.moveMap}
         />
-      </ul>
     );
 
     if ("undefined" === typeof data) {
@@ -21,7 +19,9 @@ export class SiteList extends Component {
     }
     return (
       <div className="siteListContainter">
-          { sitesList }
+          <ul>
+              { sitesList }
+          </ul>
       </div>
     );
   }

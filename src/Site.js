@@ -18,7 +18,7 @@ export class Site extends Component {
 
     const siteDetails = (
       <li key={data.siteid}>
-        <div className="Name">{data.siteid + " : " +data.name}</div>
+        <div className="Name">{data.name}</div>
         <div className="Price">£{data.price} per night</div>
         <button id={data.siteid} className="Button" onClick={this.sendDetails}>Show on map</button>
       </li>

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 export class Site extends Component {
 
   sendDetails = () => {
-    var e = {id: this.props.site.id}
+    var e = {id: this.props.site.siteid}
     this.props.moveMap(e)
   }
 
@@ -17,10 +17,10 @@ export class Site extends Component {
     }
 
     const siteDetails = (
-      <li key={data.id}>
-        <div className="Name">{data.id + " : " +data.name}</div>
+      <li key={data.siteid}>
+        <div className="Name">{data.siteid + " : " +data.name}</div>
         <div className="Price">£{data.price} per night</div>
-        <button id={data.id} className="Button" onClick={this.sendDetails}>Show on map</button>
+        <button id={data.siteid} className="Button" onClick={this.sendDetails}>Show on map</button>
       </li>
     );
 

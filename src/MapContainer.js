@@ -11,24 +11,20 @@ const params = {
 };
 
 export class MapContainer extends Component {
-  constructor() {
+    constructor() {
     super();
     this.state = {
-      siteData: {
-        "sites": [
-
-        ]
-      },
-      coords: {
-        latitude: 54.7115618,
-        longitude: -6.0656706
-      },
-      zoom: {
-        value: 6
-      },
-      selectedSite: null,
+        siteData: {},
+        coords: {
+            latitude: 54.7115618,
+            longitude: -6.0656706
+        },
+        zoom: {
+            value: 6
+        },
+        selectedSite: null,
     };
-  }
+}
 
   onMapCreated(map) {
     map.setOptions({
@@ -39,18 +35,19 @@ export class MapContainer extends Component {
 
   centerMap() {
     this.map.setCenter({
-          latitude: this.latitude,
-          longitude: this.longitude
+          lat: this.lat,
+          lng: this.lng
         })
   }
 
   componentDidUpdate(nextProps) {
     const newSite = this.props.selectedSite !== nextProps.selectedSite
+    console.log(nextProps)
     if (newSite){
       this.setState({
         coords: {
-          latitude: this.props.sites[this.props.selectedSite].latitude,
-          longitude: this.props.sites[this.props.selectedSite].longitude
+          latitude: Object.values(this.props.sites.sites)[this.props.selectedSite].latitude,
+          longitude: Object.values(this.props.sites.sites)[this.props.selectedSite].longitude
         },
         zoom: {
           value: 10
@@ -60,10 +57,8 @@ export class MapContainer extends Component {
   }
 
   render() {
-
-    const data = this.props.sites
-
-    const createMarkers = data.map((data, index) =>
+    const data = this.props.sites.sites
+    const createMarkers = Object.values(data).map((data, index) =>
       <Marker key={index}
         lat={data.latitude}
         lng={data.longitude}

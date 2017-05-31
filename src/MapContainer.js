@@ -42,7 +42,6 @@ export class MapContainer extends Component {
 
   componentDidUpdate(nextProps) {
     const newSite = this.props.selectedSite !== nextProps.selectedSite
-    console.log(nextProps)
     if (newSite){
       this.setState({
         coords: {

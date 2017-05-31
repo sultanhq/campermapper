@@ -1,244 +1,225 @@
 {
-  "databases": {
-    "siteData": {
-      "sites": [{
-          "id": 0,
-          "name": "Malham tarn2",
-          "latitude": 54.1011640,
-          "longitude": -2.1640510,
-          "price": 0
-        }, {
-          "id": 1,
-          "name": "Malham tarn",
-          "latitude": 54.1011640,
-          "longitude": -2.1640510,
-          "price": 0
-        },
-        {
-          "id": 2,
-          "name": "New Brighton Pier - Wallasey",
-          "latitude": 53.4403170,
-          "longitude": -3.0463202,
-          "price": 0
-        },
-        {
-          "id": 3,
-          "name": "New Brighton Pier Parking",
-          "latitude": 53.4391390,
-          "longitude": -3.0370781,
-          "price": 0
-        },
-        {
-          "id": 4,
-          "name": "Ribblehead Via Duct",
-          "latitude": 54.2162480,
-          "longitude": -2.3793331,
-          "price": 0
-        },
-        {
-          "id": 5,
-          "name": "Ridge Quarry View Point",
-          "latitude": 53.3764950,
-          "longitude": -2.0534728,
-          "price": 0
-        },
-        {
-          "id": 6,
-          "name": "Appledore North Devon2",
-          "latitude": 51.0543560,
-          "longitude": -4.1918404,
-          "price": 5
-        },
-        {
-          "id": 7,
-          "name": "Appledore North Devon",
-          "latitude": 51.0543560,
-          "longitude": -4.1918404,
-          "price": 5
-        },
-        {
-          "id": 8,
-          "name": "Churchfield Car park",
-          "latitude": 51.0531110,
-          "longitude": -4.1910824,
-          "price": 5
-        },
-        {
-          "id": 9,
-          "name": "Little Roodee coach and car park",
-          "latitude": 53.1857840,
-          "longitude": -2.8912974,
-          "price": 5
-        },
-        {
-          "id": 10,
-          "name": "Miners Standard",
-          "latitude": 53.1390190,
-          "longitude": -1.6457705,
-          "price": 5
-        },
-        {
-          "id": 11,
-          "name": "Porlock Weir",
-          "latitude": 51.2179950,
-          "longitude": -3.6269332,
-          "price": 5.9
-        },
-        {
-          "id": 12,
-          "name": "Lytham St Annes car park",
-          "latitude": 53.7462070,
-          "longitude": -3.0270976,
-          "price": 6
-        },
-        {
-          "id": 13,
-          "name": "Magpie Lodge",
-          "latitude": 52.3831740,
-          "longitude": -1.2050311,
-          "price": 6
-        },
-        {
-          "id": 14,
-          "name": "Manor Farm",
-          "latitude": 52.3982170,
-          "longitude": -1.1894170,
-          "price": 6
-        },
-        {
-          "id": 15,
-          "name": "Manor Farm",
-          "latitude": 52.3982170,
-          "longitude": -1.1894170,
-          "price": 6
-        },
-        {
-          "id": 16,
-          "name": "Ropery Road2",
-          "latitude": 51.2094430,
-          "longitude": -4.1154127,
-          "price": 6
-        },
-        {
-          "id": 17,
-          "name": "Lettershaws campsite",
-          "latitude": 55.4748270,
-          "longitude": -3.7100340,
-          "price": 7
-        },
-        {
-          "id": 18,
-          "name": "Oaktree Fisheries",
-          "latitude": 53.4743000,
-          "longitude": -0.8388311,
-          "price": 7
-        },
-        {
-          "id": 19,
-          "name": "Lytham St Annes",
-          "latitude": 53.7492140,
-          "longitude": -3.0327972,
-          "price": 8
-        },
-        {
-          "id": 20,
-          "name": "Pra Sands",
-          "latitude": 50.1039890,
-          "longitude": -5.3916934,
-          "price": 8
-        },
-        {
-          "id": 21,
-          "name": "Lake Semerwater - Wensleydale",
-          "latitude": 54.2800620,
-          "longitude": -2.1137565,
-          "price": 9
-        },
-        {
-          "id": 22,
-          "name": "Northfield Farm",
-          "latitude": 52.0461630,
-          "longitude": -2.0038910,
-          "price": 9
-        },
-        {
-          "id": 23,
-          "name": "Esholt caravan park",
-          "latitude": 53.8525310,
-          "longitude": -1.7444865,
-          "price": 10
-        },
-        {
-          "id": 24,
-          "name": "Glebe Farm",
-          "latitude": 52.2953640,
-          "longitude": -0.8046958,
-          "price": 10
-        },
-        {
-          "id": 25,
-          "name": "Limebrook Farm",
-          "latitude": 51.4515580,
-          "longitude": -2.4123377,
-          "price": 10
-        },
-        {
-          "id": 26,
-          "name": "Little lodge farm",
-          "latitude": 52.4506620,
-          "longitude": 0.7032616,
-          "price": 10
-        },
-        {
-          "id": 27,
-          "name": "Newbiggin Farm",
-          "latitude": 54.3339500,
-          "longitude": -3.3921513,
-          "price": 10
-        },
-        {
-          "id": 28,
-          "name": "Newholme Nurseries",
-          "latitude": 52.9593660,
-          "longitude": 0.5490189,
-          "price": 10
-        },
-        {
-          "id": 29,
-          "name": "Niffany Farm Caravan and Campsite",
-          "latitude": 53.9595680,
-          "longitude": -2.0472397,
-          "price": 10
-        },
-        {
-          "id": 30,
-          "name": "Rally field",
-          "latitude": 55.6085380,
-          "longitude": -1.7536343,
-          "price": 10
-        },
-        {
-          "id": 31,
-          "name": "Rimmington Caravan Park",
-          "latitude": 53.9170180,
-          "longitude": -2.2681357,
-          "price": 10
-        },
-        {
-          "id": 32,
-          "name": "Riverside Gardens Camping & Caravanning Site",
-          "latitude": 53.2526520,
-          "longitude": -0.9895726,
-          "price": 10
-        },
-        {
-          "id": 33,
-          "name": "Riversidegardens",
-          "latitude": 53.2526520,
-          "longitude": -0.9895726,
-          "price": 10
+    "databases": {
+        "siteData": {
+            "sites": {
+                "Malham tarn": {
+                    "name": "Malham tarn",
+                    "latitude": 54.101164,
+                    "longitude": -2.164051,
+                    "price": 0,
+                    "siteid": 0
+                },
+                "New Brighton Pier - Wallasey": {
+                    "name": "New Brighton Pier - Wallasey",
+                    "latitude": 53.440317,
+                    "longitude": -3.0463202,
+                    "price": 0,
+                    "siteid": 1
+                },
+                "New Brighton Pier Parking": {
+                    "name": "New Brighton Pier Parking",
+                    "latitude": 53.439139,
+                    "longitude": -3.0370781,
+                    "price": 0,
+                    "siteid": 2
+                },
+                "Ribblehead Via Duct": {
+                    "name": "Ribblehead Via Duct",
+                    "latitude": 54.216248,
+                    "longitude": -2.3793331,
+                    "price": 0,
+                    "siteid": 3
+                },
+                "Ridge Quarry View Point": {
+                    "name": "Ridge Quarry View Point",
+                    "latitude": 53.376495,
+                    "longitude": -2.0534728,
+                    "price": 0,
+                    "siteid": 4
+                },
+                "Appledore North Devon": {
+                    "name": "Appledore North Devon",
+                    "latitude": 51.054356,
+                    "longitude": -4.1918404,
+                    "price": 5,
+                    "siteid": 5
+                },
+                "Churchfield Car park": {
+                    "name": "Churchfield Car park",
+                    "latitude": 51.053111,
+                    "longitude": -4.1910824,
+                    "price": 5,
+                    "siteid": 6
+                },
+                "Little Roodee coach and car park": {
+                    "name": "Little Roodee coach and car park",
+                    "latitude": 53.185784,
+                    "longitude": -2.8912974,
+                    "price": 5,
+                    "siteid": 7
+                },
+                "Miners Standard": {
+                    "name": "Miners Standard",
+                    "latitude": 53.139019,
+                    "longitude": -1.6457705,
+                    "price": 5,
+                    "siteid": 8
+                },
+                "Porlock Weir": {
+                    "name": "Porlock Weir",
+                    "latitude": 51.217995,
+                    "longitude": -3.6269332,
+                    "price": 5.9,
+                    "siteid": 9
+                },
+                "Lytham St Annes car park": {
+                    "name": "Lytham St Annes car park",
+                    "latitude": 53.746207,
+                    "longitude": -3.0270976,
+                    "price": 6,
+                    "siteid": 10
+                },
+                "Magpie Lodge": {
+                    "name": "Magpie Lodge",
+                    "latitude": 52.383174,
+                    "longitude": -1.2050311,
+                    "price": 6,
+                    "siteid": 11
+                },
+                "Manor Farm": {
+                    "name": "Manor Farm",
+                    "latitude": 52.398217,
+                    "longitude": -1.189417,
+                    "price": 6,
+                    "siteid": 12
+                },
+                "Ropery Road": {
+                    "name": "Ropery Road",
+                    "latitude": 51.209443,
+                    "longitude": -4.1154127,
+                    "price": 6,
+                    "siteid": 13
+                },
+                "Lettershaws campsite": {
+                    "name": "Lettershaws campsite",
+                    "latitude": 55.474827,
+                    "longitude": -3.710034,
+                    "price": 7,
+                    "siteid": 14
+                },
+                "Oaktree Fisheries": {
+                    "name": "Oaktree Fisheries",
+                    "latitude": 53.4743,
+                    "longitude": -0.8388311,
+                    "price": 7,
+                    "siteid": 15
+                },
+                "Lytham St Annes": {
+                    "name": "Lytham St Annes",
+                    "latitude": 53.749214,
+                    "longitude": -3.0327972,
+                    "price": 8,
+                    "siteid": 16
+                },
+                "Pra Sands": {
+                    "name": "Pra Sands",
+                    "latitude": 50.103989,
+                    "longitude": -5.3916934,
+                    "price": 8,
+                    "siteid": 17
+                },
+                "Lake Semerwater - Wensleydale": {
+                    "name": "Lake Semerwater - Wensleydale",
+                    "latitude": 54.280062,
+                    "longitude": -2.1137565,
+                    "price": 9,
+                    "siteid": 18
+                },
+                "Northfield Farm": {
+                    "name": "Northfield Farm",
+                    "latitude": 52.046163,
+                    "longitude": -2.003891,
+                    "price": 9,
+                    "siteid": 19
+                },
+                "Esholt caravan park": {
+                    "name": "Esholt caravan park",
+                    "latitude": 53.852531,
+                    "longitude": -1.7444865,
+                    "price": 10,
+                    "siteid": 20
+                },
+                "Glebe Farm": {
+                    "name": "Glebe Farm",
+                    "latitude": 52.295364,
+                    "longitude": -0.8046958,
+                    "price": 10,
+                    "siteid": 21
+                },
+                "Limebrook Farm": {
+                    "name": "Limebrook Farm",
+                    "latitude": 51.451558,
+                    "longitude": -2.4123377,
+                    "price": 10,
+                    "siteid": 22
+                },
+                "Little lodge farm": {
+                    "name": "Little lodge farm",
+                    "latitude": 52.450662,
+                    "longitude": 0.7032616,
+                    "price": 10,
+                    "siteid": 23
+                },
+                "Newbiggin Farm": {
+                    "name": "Newbiggin Farm",
+                    "latitude": 54.33395,
+                    "longitude": -3.3921513,
+                    "price": 10,
+                    "siteid": 24
+                },
+                "Newholme Nurseries": {
+                    "name": "Newholme Nurseries",
+                    "latitude": 52.959366,
+                    "longitude": 0.5490189,
+                    "price": 10,
+                    "siteid": 25
+                },
+                "Niffany Farm Caravan and Campsite": {
+                    "name": "Niffany Farm Caravan and Campsite",
+                    "latitude": 53.959568,
+                    "longitude": -2.0472397,
+                    "price": 10,
+                    "siteid": 26
+                },
+                "Rally field": {
+                    "name": "Rally field",
+                    "latitude": 55.608538,
+                    "longitude": -1.7536343,
+                    "price": 10,
+                    "siteid": 27
+                },
+                "Rimmington Caravan Park": {
+                    "name": "Rimmington Caravan Park",
+                    "latitude": 53.917018,
+                    "longitude": -2.2681357,
+                    "price": 10,
+                    "siteid": 28
+                },
+                "Riverside Gardens Camping & Caravanning Site": {
+                    "name": "Riverside Gardens Camping & Caravanning Site",
+                    "latitude": 53.252652,
+                    "longitude": -0.9895726,
+                    "price": 10,
+                    "siteid": 29
+                },
+                "Riversidegardens": {
+                    "name": "Riversidegardens",
+                    "latitude": 53.252652,
+                    "longitude": -0.9895726,
+                    "price": 10,
+                    "siteid": 30
+                }
+            }
         }
-      ]
     }
-  }
 }

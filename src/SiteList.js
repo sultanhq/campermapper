@@ -4,8 +4,8 @@ import { Site } from './Site';
 export class SiteList extends Component {
   render()
   {
-    const data = this.props.sites
-    const sitesList = data.map((data, index) =>
+    const data = this.props.sites.sites
+    const sitesList = Object.values(data).map((data, index) =>
         <Site key={index}
           site={data}
           moveMap={this.props.moveMap}

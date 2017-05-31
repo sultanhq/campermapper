@@ -61,7 +61,6 @@ export class MapContainer extends Component {
       <Marker key={index}
         lat={data.latitude}
         lng={data.longitude}
-        label={"" + index}
         onClick={this.centerMap}
         />
     );
